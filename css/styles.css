@@ -77,6 +77,12 @@
   --bs-link-hover-color: #15967d;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
+  --primary-color: #0A192F;
+  --accent-color: #64FFDA;
+  --secondary-color: #233554;
+  --text-color: #CCD6F6;
+  --bg-color: #112240;
+  --hover-color: #3282B8;
 }
 
 *,
@@ -97,9 +103,9 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: var(--text-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: var(--bg-color);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -3727,6 +3733,7 @@ textarea.form-control-lg {
 }
 
 .navbar {
+  background-color: var(--primary-color);
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
@@ -3753,6 +3760,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -11051,3 +11059,60 @@ html {
   font-size: 1.5rem;
   color: var(--bs-white);
 }
+
+:root {
+  --primary-color: #0A192F;
+  --accent-color: #64FFDA;
+  --secondary-color: #233554;
+  --text-color: #CCD6F6;
+  --bg-color: #112240;
+  --hover-color: #3282B8;
+}
+
+/* Apply background and text colors globally */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--text-color);
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+.masthead {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-color);
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Divider Custom Styling */
+.divider-custom .divider-custom-icon {
+  color: var(--accent-color);
+}
+
+.nav-link,
+.btn-primary {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+

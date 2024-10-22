@@ -51,4 +51,22 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    window.addEventListener('load', () => {
+        const options = {
+            strings: [
+                "Aspiring DevOps Engineer",
+                "Enthusiastic Learner",
+                "Cloud Technologies Enthusiast"
+            ],
+            typeSpeed: 50,    // Speed of typing
+            backSpeed: 30,    // Speed of backspacing
+            loop: true,       // Loop the animation
+            startDelay: 500,  // Delay before starting
+            backDelay: 1500   // Delay before deleting
+        };
+    
+        new Typed('#typed-text', options);
+    });
+    
+
 });
